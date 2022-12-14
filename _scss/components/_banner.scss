@@ -1,0 +1,10 @@
+@use "uswds-core" as *;
+@use "theme-variables" as *;
+
+.usa-banner__header,
+.usa-banner__header--expanded {
+  @include u-bg("blue-5");
+  @include at-media("tablet") {
+    @include u-bg("blue-5");
+  }
+}

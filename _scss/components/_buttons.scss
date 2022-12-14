@@ -1,0 +1,20 @@
+@use "uswds-core" as *;
+@use "theme-variables" as *;
+
+.usa-button--secondary,
+.usa-button--secondary:visited {
+  @include u-text("primary");
+  @include u-bg("secondary-lightest");
+}
+
+.usa-button--secondary:hover,
+.usa-button--secondary.usa-button--hover,
+.usa-button--secondary:focus {
+  @include u-text("blue-70v");
+  @include u-bg("secondary-lighter");
+}
+
+.usa-button--secondary:active,
+.usa-button--secondary.usa-button--active {
+  @include u-bg("secondary-light");
+}
